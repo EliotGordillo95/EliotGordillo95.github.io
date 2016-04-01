@@ -23,10 +23,10 @@ header{
 }
 header nav{
   float: right;
+  display: inline-block;
 }
 nav ul li{
-  display: block;
-  display: inline;
+  display: inline-block;
 }
 nav ul{
   list-style-type: none;
@@ -40,6 +40,7 @@ nav li a:hover {
     color: white;
 }
 nav a{
+  display: inline-block;
   font-size: 14px;
   font-weight: 300;
   text-decoration: none;
@@ -47,15 +48,16 @@ nav a{
   letter-spacing: 1px;
 }
 main{
-  width: 700px;
+  padding: 10px;
+  width: 725px;
   float: left;
   margin: 0 50px;
   background-color: chocolate;
 }
-/*aside{
+aside{
   float: right;
   width: 400px;
-}*/
+}
 aside ul li{
   border-bottom: 1px solid black;
 }
