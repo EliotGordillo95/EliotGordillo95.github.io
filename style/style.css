@@ -21,42 +21,49 @@ header{
   width: 1200px;
   background-color: skyblue;
 }
-header nav{
+nav{
+  margin: 0 auto;
+  text-align: center;
   float: right;
-  display: inline-block;
-}
-nav ul li{
-  display: inline-block;
 }
 nav ul{
-  list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  background-color: white;
+  overflow: hidden;
 }
-nav li a:hover {
-    background-color: #555;
-    color: white;
+
+nav li{
+    float: left;
 }
-nav a{
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 300;
+nav li:hover{
+  background: #59A59B;
+  color: white;
+  transition-duration: .8s;
+}
+
+nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: inherit;
+}
+nav li a:active{
+  text-decoration: none;
+  color:#00ddff;
 }
 main{
   padding: 10px;
-  width: 725px;
+  width: 800px;
   float: left;
-  margin: 0 50px;
+  margin: 0 5px;
   background-color: chocolate;
 }
 aside{
   float: right;
-  width: 400px;
 }
 aside ul li{
   border-bottom: 1px solid black;
@@ -93,6 +100,53 @@ margin: 25px 50px 0 25px;
 footer{
   background-color: chocolate;
   text-align: center;
-  padding: 50px;
+  padding: 25px;
   clear: both;
+}
+table, th, td {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+th, td {
+ padding: 5px;
+}
+th {
+ text-align: center;
+}
+table{
+ width:725px;
+}
+table, th, td {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+th, td {
+ padding: 0px;
+ text-align: left;
+}
+table#t01 tr:nth-child(even) {
+ background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+background-color:#fff;
+}
+table#t01 th	{
+ background-color: black;
+ color: white;
+}
+/*img.fotomia {
+/*background: url(fotomia-1000x1000.gif) no-repeat right bottom;
+padding: 5px 10px 10px 5px;*/
+border: 5px solid #ddd;
+padding: 5px; /*Inner border size*/
+background: #fff; /*Inner border color*/
+}*/
+.imagen {
+background: #000 url(watermark.jpg) no-repeat;
+width: 575px;
+height: 335px;
+}
+img.fotomia {
+filter:alpha(opacity=75);
+opacity:.75;
 }
