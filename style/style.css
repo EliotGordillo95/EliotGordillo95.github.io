@@ -121,7 +121,7 @@ table, th, td {
  border-collapse: collapse;
 }
 th, td {
- padding: 0px;
+ padding: 5px;
  text-align: left;
 }
 table#t01 tr:nth-child(even) {
